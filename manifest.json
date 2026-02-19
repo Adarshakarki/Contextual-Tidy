@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Tidy Downloads Pro",
+  "version": "1.2.0",
+  "description": "Smartly renames downloads using dates and page context.",
+  "permissions": [
+    "downloads",
+    "storage",
+    "webRequest",
+    "tabs",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "options.html"
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}
