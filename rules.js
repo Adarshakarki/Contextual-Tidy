@@ -1,8 +1,3 @@
-/**
- * rules.js - Strict Heuristic Engine
- */
-
-// Site name suffixes commonly appended to page titles — strip these
 const TITLE_SUFFIXES = [
   'pinterest', 'instagram', 'youtube', 'twitter', 'x', 'facebook',
   'reddit', 'tiktok', 'google', 'wikipedia', 'linkedin', 'tumblr',
@@ -191,7 +186,6 @@ export function getExtension(mimeType) {
 }
 
 // ─── Internal Helpers ─────────────────────────────────────────────────────────
-
 function getExtFromFilename(name) {
   if (!name || !name.includes('.')) return '';
   const ext = name.split('.').pop().toLowerCase();
